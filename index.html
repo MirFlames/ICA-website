@@ -1,0 +1,104 @@
+<html>
+  <head>
+    <!-- Кодировка веб-страницы -->
+    <meta charset="utf-8" />
+    <!-- Настройка viewport -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha512-Dop/vW3iOtayerlYAqCgkVr2aTr2ErwwTYOvRFUpzl2VhCMJyjQF0Q9TjUXIo6JhuM/3i0vVEt2e/7QQmnHQqw=="
+      crossorigin="anonymous"
+    />
+    <!-- Дополнительные стили (не обязательно) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap-theme.min.css"
+      integrity="sha512-iy8EXLW01a00b26BaqJWaCmk9fJ4PsMdgNRqV96KwMPSH+blO82OHzisF/zQbRIIi8m0PiO10dpS0QxrcXsisw=="
+      crossorigin="anonymous"
+    />
+
+    <!-- jQuery (необходим для Bootstrap JS) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"
+      integrity="sha512-oBTprMeNEKCnqfuqKd6sbvFzmFQtlXS3e0C/RGFV0hD6QzhHV+ODfaQbAlmY6/q0ubbwlAM/nCJjkrgA3waLzg=="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- добавим стили mocha для отображения результатов -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css"
+    />
+    <!-- добавляем сам фреймворк mocha -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+    <script>
+      // включаем режим тестирования в стиле BDD
+      mocha.setup("bdd");
+    </script>
+    <!-- добавим chai -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+    <script>
+      // chai предоставляет большое количество функций. Объявим assert глобально
+      let assert = chai.assert;
+    </script>
+
+    <title>Contract Agency</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>ICA website</h1>
+    </div>
+    <script src="src/index.js"></script>
+
+    <!-- скрипт со спецификацией (describe, it...) -->
+    <script src="src/unittests.js"></script>
+
+    <!-- элемент с id="mocha" будет содержать результаты тестов -->
+    <div id="mocha"></div>
+
+    <!-- запускаем тесты! -->
+    <script>
+      mocha.run();
+    </script>
+
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-toggle="popover"
+      title="Сообщение"
+      data-content="Ура, Bootstrap 4 работает"
+    >
+      Поднеси ко мне курсор
+    </button>
+
+    <!-- После подключения jQuery, Popper и Bootstrap JS -->
+    <script>
+      $(function () {
+        $('[data-toggle="popover"]').popover({ trigger: "hover" });
+      });
+    </script>
+    <br />
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nesciunt
+    adipisci, pariatur itaque quo voluptate fugit unde soluta, esse minus
+    tenetur fugiat similique a veniam facilis quos dolorem. Soluta nulla nam
+    fugiat reprehenderit sint! Hic aliquam officia rerum nulla ut ea culpa, unde
+    ex molestias soluta consequatur nesciunt nisi consectetur adipisci tempore
+    totam reiciendis molestiae in. Pariatur incidunt nobis et consequuntur
+    repellendus vel enim perferendis nam molestiae ab minus perspiciatis a animi
+    in placeat sed alias facere reprehenderit temporibus quidem minima, vero
+    aperiam, voluptatum aspernatur. Laudantium, qui culpa nostrum doloribus,
+    eum, inventore accusantium minus amet maxime est temporibus labore suscipit!
+  </body>
+</html>
